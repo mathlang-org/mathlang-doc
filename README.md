@@ -1,21 +1,13 @@
-# Contents
+*Mathlang* is a Python module that will change the world, but as for the approach, it is still a secret.
 
-- [Overview of `R`](markdown/overview.md#contents)
-	- `R` or `Python`
-	- Learning Resources
-		- Comprehensive Resources
-		- Basis
-		- RStudio
-		- Data Science
-- [Preparation](markdown/preparation.md#contents)
-	- Download and Install the Latest `R`
-	- Download and Install the Latest RStudio
-	- How to Use RStudio
-	- How to Fix the Problems
-- [Getting Started with `R`](markdown/getting-started.md#contents)
-	- Cheat Sheets from RStudio
-		- RStudio
-		- Basis
-		- Extra Packages
-		- `LaTeX` and `Markdown`
-	- Quick Start
+# Basic Usage
+## Installation
+Install with pip:
+```shell
+pip install mathlang
+```
+
+## Get Started
+```Python
+import mathlang
+```
