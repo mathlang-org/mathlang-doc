@@ -1,0 +1,36 @@
+% !Mode:: "TeX:UTF-8"
+% !TEX program  = lualatex
+% latexmk -lualatex -shell-escape -f main
+\nonstopmode
+% TODO
+% =======
+%	1. The relative path in markdown file
+% 	2. The anchor point
+
+\documentclass[a4paper]{article}
+	% Packages
+	\usepackage{hyperref}
+	\usepackage{minted}
+	\usepackage{fontawesome}
+	\usepackage[Glenn]{fncychap}
+	% Markdown configurations
+	\usepackage[footnotes, definitionLists, hashEnumerators, hybrid,
+		smartEllipses, tightLists=false, fencedCode=true]{markdown}
+		\markdownSetup{
+			renderers = {
+				link = {\href{#2}{#1}}
+			},
+			rendererPrototypes={
+				horizontalRule = {\clearpage}
+			}
+		}
+	% Information
+	\title{Mathlang}
+	\author{Iydon Liang}
+	\date{\today}
+\begin{document}
+	\maketitle\tableofcontents\clearpage
+
+	\markdownInput{../markdown/index.md}
+
+\end{document}
